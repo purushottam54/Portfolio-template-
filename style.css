@@ -1,0 +1,177 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gilroy';
+    color: white;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+#main {
+    height: 100%;
+    width: 100%;
+    background-color: #000;
+}
+
+img {
+    height: 65px;
+}
+
+#nav {
+    height: 100px;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+}
+
+#nav-2 {
+    display: flex;
+    gap: 55px;
+}
+
+#nav-3 {
+    display: flex;
+    gap: 55px;
+    align-items: center;
+}
+
+#nav h3 {
+    text-transform: uppercase;
+}
+
+#nav h4 {
+    text-transform: uppercase;
+}
+
+#nav button {
+    background-color: #fff;
+    color: #000;
+    padding: 18px 25px;
+    border: none;
+    font-weight: 700;
+    font-size: 16px;
+    border-radius: 50px;
+}
+
+#main h1 {
+    font-size: 60px;
+    text-transform: uppercase;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+#main h1 #hi2 {
+    background-color: brown;
+    font-size: 25px;
+    padding: 20px 40px;
+    border-radius: 50px;
+    margin: 0 30px;
+}
+
+#main h1 #hi {
+    color: red;
+    font-size: 150px;
+}
+
+#main h1 #hii {
+    font-size: 100px;
+}
+
+#main h1:nth-child(2) {
+
+    margin-top: 60px;
+}
+
+#main #left-img {
+    height: 300px;
+    position: absolute;
+    top: 14%;
+    left: 4%;
+    border-radius: 30px;
+
+}
+
+#main #right-img {
+    height: 300px;
+    position: absolute;
+    bottom: 14%;
+    right: 7%;
+    border-radius: 30px;
+
+
+}
+
+h5 {
+    position: absolute;
+    bottom: 15%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    font-size: 25px;
+
+}
+
+
+
+@media (max-width: 768px) {
+
+    #nav {
+        height: auto;
+        flex-direction: row;
+        align-items: center;
+        padding: 15px;
+       
+    }
+
+    #nav-2,
+    #nav-3 {
+        margin-top: 15px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    #nav h3,
+    #nav h4 {
+        font-size: 18px;
+    }
+
+    #nav button {
+        padding: 12px 20px;
+    }
+
+    #main {
+        padding: 20px;
+    }
+
+    #main h1 {
+        font-size: 36px;
+    }
+
+    #main #left-img,
+    #main #right-img {
+        height: 200px;
+        width: 40%;
+        gap: 40px;
+        position: static;
+        margin: 20px auto;
+    }
+
+    h5 {
+        bottom: 10px;
+        font-size: 18px;
+    }
+}
